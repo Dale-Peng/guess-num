@@ -1,10 +1,14 @@
 import random
+start = input('請決定最小值:')
+end = input('請決定最大值:')
+start = int(start)
+end = int(end)
 
-r = random.randint(1, 100)
+r = random.randint(start, end)
 count = 0
 while True:
 	count += 1  # count = count + 1 (快寫法)
-	num = input('請猜1-100的數字: ')
+	num = input('請猜數字: ')
 	num = int(num)
 	if num == r:
 		print('答對了!')
